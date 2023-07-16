@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookland - Your Online Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <h3 class="logo">Book<span>Land.</span></div></h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#product">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#team">Members</a></li>
+        <li><a href="cart.html">Cart(<span id="cartCount">0</span>)</a></li>
+      </ul>
+    </nav>
+  <!-- end of navbar -->
+ 
+    <!-- Hero  -->
+  <section class="hero" id="home">
+   
+      <h1>Welcome to Group 7 BookLand.</h1>
+      <p>Discover your next great read.</p>
+      <a class="cta-button" href="#product">Shop Now</a>
+   
+    <div class="hero-img">
+      <img src="./hero.png" alt="" >
+    </div>
+      
+    
+  </section>
+  <!-- End of hero -->
+
+  <!-- About us -->
+  <section class="about" id="about">
+      <div class="row">
+        <div class="col">
+          <img src="./side-book.png" alt="" >
+        </div>
+        <div class="col">
+          <div class="content">
+            <h2>About Us</h2>
+            <p>Bookland is a leading online bookstore committed to providing a vast collection of quality books for book lovers around the world. We believe in the power of literature to inspire, educate, and entertain.<br><br>
+
+              Our dedicated team is passionate about curating a diverse range of books across various genres, from captivating fiction to enlightening non-fiction. We strive to bring you the latest releases, timeless classics, and hidden gems that will ignite your imagination and broaden your horizons.<br><br>
+              
+              At Bookland, we are more than just a bookstore. We aim to foster a vibrant community of book enthusiasts, where you can connect with fellow readers, share recommendations, and engage in thought-provoking discussions. We believe that books have the ability to create connections, spark conversations, and change lives.</p>
+            <a class="cta-button" href="#product">Shop Now</a>
+          </div>
+          
+        </div>
+      </div>
+  </section>
+  <!-- End od about us -->
+
+  <!-- Feature-book -->
+  <section class="feature-book" id="product">
+    <h2>Featured Books</h2>
+    <div class="book-list">
+      <div class="book">
+        <img src="book1.jpg" alt="Book 1">
+        <div class="details">
+          <h3>Atomic Habits</h3>
+          <span>James Clear</span>
+          <p>$19.99 <s>$25.99</s></p>  
+          <button type="button" class="cta-button" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="book">
+        <img src="book2.jpg" alt="Book 1">
+        <div class="details">
+          <h3>Catching Fire</h3>
+          <span>Suzanne Collins</span>
+          <p>$14.99 <s>$20.99</s></p>  
+          <button type="button" class="cta-button" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="book">
+        <img src="book3.png" alt="Book 1">
+        <div class="details">
+          <h3>Heir of the Gift</h3>
+          <span>Jonathan Rud</span>
+          <p>$24.99 <s>$30.99</s></p>  
+          <button type="button" class="cta-button" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="book">
+        <img src="book4.png" alt="Book 1">
+        <div class="details">
+          <h3>Relix</h3>
+          <span>Paul Rix</span>
+          <p>$29.99 <s>$32.99</s></p>  
+          <button type="button" class="cta-button" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <center><a href="#">View all</a></center>
+  </section>
+  <!-- End of features-book -->
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-text">
+      <h2>Get lost in the world of books</h2>
+      <p>Explore our vast collection and embark on new literary adventures.</p>
+      <a class="banner-button" href="#product">Shop Now</a>
+    </div>
+    <div class="banner-image">
+      <img src="banner.jpg" alt="Banner Image">
+    </div>
+  </section>
+  <!-- End of banner -->
+
+  <!-- group members -->
+  <section class="group-members" id="team">
+    <h1>Group 7 Members</h1>
+    <ul class="member-list">
+      <li>
+        <div class="member-card">
+          <img src="musa.jpeg" alt="Member 1">
+          <div class="member-details">
+            <h2> Abdulsalam Musa Abdulhameed</h2>
+            <h4>UG19ICT1022</h4>
+            <p>Group Leader</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="member-card">
+          <img src="ahmad.jpeg" alt="Member 2">
+          <div class="member-details">
+            <h2>Ahmad Muktar</h2>
+            <h4>UG22CYB1025</h4>
+            <p>Member</p>
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+  </section>
+  <!-- end of group members -->
+
+  <!-- Contact Us -->
+  <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or inquiries, please feel free to get in touch with us. We are here to assist you.</p>
+    <div class="contact-info">
+      
+    </div>
+    <div class="contact-section">
+      
+      <div class="contact-form">
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required>
+  
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+  
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End of contact us -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <h3 class="logo">Book<span>Land.</span></div></h3>
+    </div>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <ul>
+        <li><a href="#"><i class="far fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="far fa-twitter"></i></a></li>
+        <li><a href="#"><i class="far fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      &copy; 2023 Group7. All rights reserved. | Address: Kano, Nigeria | Phone: +234 8121-135-4949 | Email: info@group7.com
+    </div>
+  </footer>
+  <!-- End of footer -->
+
+  <script>
+    alert("Welcome to Group7 BookLand");
+    document.getElementById('contactForm').addEventListener('submit', function(){
+      alert("Your Message sent successfully");
+    });
+
+    
+    var cartValue = 0;
+    function addToCart(button){
+      button.innerHTML = "Added";
+      button.disabled = true;
+      cartValue++;
+      document.getElementById('cartCount').innerHTML = cartValue;
+      alert("1 item Added to cart");
+    }
+
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      const scrollPos = window.scrollY;
+
+      if (scrollPos > 0) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+  </script>
+</body>
+</html>
